@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &trans  &trans  &trans            &trans             &trans  &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                               &trans  &trans  &trans            &kp LC(LA(O))      &trans  &trans
-&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12                                              &trans  &trans  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &kp LS(LG(LEFT))    &kp LS(LG(RIGHT))  &trans  &trans  &trans            &trans             &trans  &trans
-                                        &trans        &trans        &trans        &trans              &trans             &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans       &trans  &trans            &trans             &trans  &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &trans       &trans  &trans            &kp LC(LA(O))      &trans  &trans
+&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12                         &kp LG(F10)  &trans  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans       &trans  &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &trans  &trans
+                                        &trans        &trans        &trans        &trans    &trans  &trans       &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -65,8 +65,8 @@
 &trans  &trans    &trans    &trans      &trans          &trans                                           &trans      &trans       &trans        &trans         &trans         &trans
 &trans  &trans    &kp UP    &trans      &kp LC(LS(R))   &kp LG(LS(T))                                    &trans      &trans       &trans        &kp LG(LS(O))  &trans         &trans
 &trans  &kp LEFT  &kp DOWN  &kp RIGHT   &trans          &trans                                           &kp LS(F6)  &kp LA(F12)  &kp LA(LEFT)  &kp LA(RIGHT)  &trans         &trans
-&trans  &trans    &trans    &trans      &trans          &trans            &kp LG(LEFT)    &kp LG(RIGHT)  &trans      &trans       &trans        &trans         &kp BACKSLASH  &trans
-                            &kp LC(UP)  &kp LA(LS(UP))  &kp LA(LS(DOWN))  &kp LA(UP)      &kp LA(DOWN)   &kp DELETE  &trans       &trans
+&trans  &trans    &trans    &trans      &trans          &trans            &kp LG(LA(L))    &trans        &trans      &trans       &kp LG(LEFT)  &kp LG(RIGHT)  &kp BACKSLASH  &trans
+                            &kp LC(UP)  &kp LA(LS(UP))  &kp LA(LS(DOWN))  &kp LA(UP)       &kp LA(DOWN)  &kp DELETE  &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
